@@ -34,10 +34,10 @@ html {
 
 body {
     font-family: $ff-regular;
-    font-size: 1.6rem;
-    line-height: 1.52;
-    background-color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    background-color: $color-4;
     padding-top: 6rem;
+    line-height: 1.6;
 }
 
 a {text-decoration: none;}

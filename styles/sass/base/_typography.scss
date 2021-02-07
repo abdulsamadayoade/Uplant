@@ -43,3 +43,10 @@ $ff-medium: 'Jost-Medium', sans-serif;
 $ff-semibold: 'Jost-SemiBold', sans-serif;
 $ff-bold: 'Jost-Bold', sans-serif;
 $ff-extrabold: 'Jost-ExtraBold', sans-serif;
+
+.h-1 {
+    color: $color-4;
+    line-height: 1.1;
+    font-size: 4.7rem;
+    font-weight: 900;
+}

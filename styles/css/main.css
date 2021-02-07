@@ -34,6 +34,13 @@
   src: url("../../../textfonts/Jost-ExtraBold.ttf") format("truetype");
 }
 
+.h-1 {
+  color: #ffffff;
+  line-height: 1.1;
+  font-size: 4.7rem;
+  font-weight: 900;
+}
+
 /*-------------------------- PRESETS ---------------------------*/
 *,
 *::before,
@@ -76,10 +83,10 @@ html {
 
 body {
   font-family: "Jost-Regular", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.52;
-  background-color: white;
+  font-size: 1.7rem;
+  background-color: #ffffff;
   padding-top: 6rem;
+  line-height: 1.6;
 }
 
 a {
@@ -150,9 +157,78 @@ ul {
 .btn {
   border: none;
   outline: none;
+  padding: 1.6rem 3.5rem;
+  border-radius: 8px;
+  font-family: "Jost-Medium", sans-serif;
+  font-weight: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn--white {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all .5s;
+}
+
+.btn--white:hover {
+  color: #ffffff;
+  background-color: #ffad9b;
 }
 
 .menu--btn {
   background: transparent;
   display: none;
+}
+
+.hero-container {
+  height: 600px;
+  background-color: #e78168;
+  margin-top: 3rem;
+  border-radius: 15px;
+  padding: 8rem 9rem;
+  overflow: hidden;
+}
+
+.hero-container .hero {
+  display: flex;
+}
+
+.hero-container .hero__col--1 {
+  flex-basis: 50%;
+}
+
+.hero-container .hero__col--1 .h-1 {
+  margin-bottom: 3rem;
+}
+
+.hero-container .hero__col--1 p {
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+.hero-container .hero__col--2 {
+  position: relative;
+  flex-basis: 50%;
+}
+
+.hero-container .hero__col--2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #C96552;
+  border-radius: 50%;
+}
+
+.hero-container .hero__col--2::after {
+  content: '';
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  height: 80rem;
+  width: 60rem;
+  background-image: url("../../../assets/image-hero-phone.png");
 }

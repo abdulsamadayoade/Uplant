@@ -1,6 +1,23 @@
 .btn {
     border: none;
     outline: none;
+    padding: 1.6rem 3.5rem;
+    border-radius: 8px;
+    font-family: $ff-medium;
+    font-weight: inherit;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn--white {
+    background-color: $color-4;
+    color: $color-5;
+    transition: all .5s;
+
+    &:hover {
+        color: $color-4;
+        background-color: $color-2;
+    }
 }
 
 .menu--btn {

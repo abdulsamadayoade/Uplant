@@ -1,0 +1,51 @@
+.hero-container {
+    height: 600px;
+    background-color: $color-3;
+    margin-top: 3rem;
+    border-radius: 15px;
+    padding: 8rem 9rem;
+    overflow: hidden;
+
+    .hero {
+        display: flex;
+
+        &__col--1 {
+            flex-basis: 50%;
+
+            .h-1 {
+                margin-bottom: 3rem;
+            }
+
+            p {
+                color: $color-4;
+                margin-bottom: 4rem;
+            }
+        }
+
+        &__col--2 {
+            position: relative;
+            flex-basis: 50%;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                background-color: $color-6;
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -15rem;
+                left: 0;
+                height: 80rem;
+                width: 60rem;
+                background-image: url("../../../assets/image-hero-phone.png");
+            }
+        }
+    }
+}
