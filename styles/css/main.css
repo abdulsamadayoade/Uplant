@@ -1,1 +1,158 @@
-/* No CSS */
+/*-------------------------- FONTS ---------------------------*/
+@font-face {
+  font-family: 'Jost-Thin';
+  src: url("../../../textfonts/Jost-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-Light';
+  src: url("../../../textfonts/Jost-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-Regular';
+  src: url("../../../textfonts/Jost-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-Medium';
+  src: url("../../../textfonts/Jost-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-SemiBold';
+  src: url("../../../textfonts/Jost-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-Bold';
+  src: url("../../../textfonts/Jost-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Jost-ExtraBold';
+  src: url("../../../textfonts/Jost-ExtraBold.ttf") format("truetype");
+}
+
+/*-------------------------- PRESETS ---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Jost-Regular", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.52;
+  background-color: white;
+  padding-top: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 196px;
+  padding-top: .8rem;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.nav__link {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #1d1c1e;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #1d1c1e;
+  display: inline-block;
+  transform: translateX(-100%);
+  transform-origin: left;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.nav__link:hover::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.menu--btn {
+  background: transparent;
+  display: none;
+}
