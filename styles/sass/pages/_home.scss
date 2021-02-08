@@ -29,10 +29,10 @@
             &::before {
                 content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 200px;
-                height: 200px;
+                top: -5rem;
+                left: 7rem;
+                width: 40rem;
+                height: 40rem;
                 background-color: $color-6;
                 border-radius: 50%;
             }

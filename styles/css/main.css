@@ -215,10 +215,10 @@ ul {
 .hero-container .hero__col--2::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
+  top: -5rem;
+  left: 7rem;
+  width: 40rem;
+  height: 40rem;
   background-color: #C96552;
   border-radius: 50%;
 }
