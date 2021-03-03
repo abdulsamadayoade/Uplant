@@ -1,0 +1,57 @@
+header {
+    background-color: $color-1;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .nav {
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            flex-basis: 32%;
+
+            img {
+                width: 15rem;
+                height: 5rem;
+            }
+        }
+
+        &__box {
+            width: 63%;
+            background-color: $color-3;
+            color: $color-1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 7rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            margin: 0 2.4rem;
+        }
+
+        &__link {
+            color: inherit;
+        }
+
+        &__icons {
+            display: flex;
+        }
+
+        &__icon {
+            height: 1.8rem;
+            width: 1.8rem;
+            margin: 0 1.3rem;
+        }
+    }
+}

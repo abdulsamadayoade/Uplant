@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: "Comfortaa Regular", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.6;
 }
 
@@ -46,7 +46,65 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 110rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+header {
+  background-color: #0C3F36;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header .nav {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav__logo {
+  flex-basis: 32%;
+}
+
+header .nav__logo img {
+  width: 15rem;
+  height: 5rem;
+}
+
+header .nav__box {
+  width: 63%;
+  background-color: #F4F4F4;
+  color: #0C3F36;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 7rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .nav__list {
+  display: flex;
+}
+
+header .nav__item {
+  margin: 0 2.4rem;
+}
+
+header .nav__link {
+  color: inherit;
+}
+
+header .nav__icons {
+  display: flex;
+}
+
+header .nav__icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 0 1.3rem;
 }
