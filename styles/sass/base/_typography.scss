@@ -1,52 +1,21 @@
 /*-------------------------- FONTS ---------------------------*/
 
 @font-face {
-    font-family: 'Jost-Thin';
-    src:url('../../../textfonts/Jost-Thin.ttf') format('truetype');
+    font-family: 'DMSerifDisplay Regular';
+    src:url('../../../textfonts/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Jost-Light';
-    src:url('../../../textfonts/Jost-Light.ttf') format('truetype');
+    font-family: 'Comfortaa Regular';
+    src:url('../../../textfonts/Comfortaa-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Jost-Regular';
-    src:url('../../../textfonts/Jost-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Jost-Medium';
-    src:url('../../../textfonts/Jost-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Jost-SemiBold';
-    src:url('../../../textfonts/Jost-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Jost-Bold';
-    src:url('../../../textfonts/Jost-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Jost-ExtraBold';
-    src:url('../../../textfonts/Jost-ExtraBold.ttf') format('truetype');
+    font-family: 'Comfortaa Bold';
+    src:url('../../../textfonts/Comfortaa-Bold.ttf') format('truetype');
 }
 
 
-$ff-thin: 'Jost-Thin', sans-serif;
-$ff-light: 'Jost-Light', sans-serif;
-$ff-regular: 'Jost-Regular', sans-serif;
-$ff-medium: 'Jost-Medium', sans-serif;
-$ff-semibold: 'Jost-SemiBold', sans-serif;
-$ff-bold: 'Jost-Bold', sans-serif;
-$ff-extrabold: 'Jost-ExtraBold', sans-serif;
-
-.h-1 {
-    color: $color-4;
-    line-height: 1.1;
-    font-size: 4.7rem;
-    font-weight: 900;
-}
+$ff-heading: 'DMSerifDisplay Regular', serif;
+$ff-regular: 'Comfortaa Regular', sans-serif;
+$ff-bold: 'Comfortaa Bold', sans-serif;

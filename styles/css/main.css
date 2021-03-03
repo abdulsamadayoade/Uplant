@@ -1,44 +1,17 @@
 /*-------------------------- FONTS ---------------------------*/
 @font-face {
-  font-family: 'Jost-Thin';
-  src: url("../../../textfonts/Jost-Thin.ttf") format("truetype");
+  font-family: 'DMSerifDisplay Regular';
+  src: url("../../../textfonts/DMSerifDisplay-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Jost-Light';
-  src: url("../../../textfonts/Jost-Light.ttf") format("truetype");
+  font-family: 'Comfortaa Regular';
+  src: url("../../../textfonts/Comfortaa-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Jost-Regular';
-  src: url("../../../textfonts/Jost-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Jost-Medium';
-  src: url("../../../textfonts/Jost-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Jost-SemiBold';
-  src: url("../../../textfonts/Jost-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Jost-Bold';
-  src: url("../../../textfonts/Jost-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Jost-ExtraBold';
-  src: url("../../../textfonts/Jost-ExtraBold.ttf") format("truetype");
-}
-
-.h-1 {
-  color: #ffffff;
-  line-height: 1.1;
-  font-size: 4.7rem;
-  font-weight: 900;
+  font-family: 'Comfortaa Bold';
+  src: url("../../../textfonts/Comfortaa-Bold.ttf") format("truetype");
 }
 
 /*-------------------------- PRESETS ---------------------------*/
@@ -57,35 +30,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 62.5em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  html {
-    font-size: 54%;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  html {
-    font-size: 51%;
-  }
-}
-
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
-
 body {
-  font-family: "Jost-Regular", sans-serif;
-  font-size: 1.7rem;
-  background-color: #ffffff;
-  padding-top: 6rem;
+  font-family: "Comfortaa Regular", sans-serif;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -102,133 +49,4 @@ ul {
   max-width: 110rem;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-.nav {
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav__logo {
-  width: 196px;
-  padding-top: .8rem;
-}
-
-.nav__list {
-  display: flex;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 2.5rem;
-}
-
-.nav__link {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  color: #1d1c1e;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav__link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: #1d1c1e;
-  display: inline-block;
-  transform: translateX(-100%);
-  transform-origin: left;
-  opacity: 0;
-  transition: all .5s;
-}
-
-.nav__link:hover::after {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 1.6rem 3.5rem;
-  border-radius: 8px;
-  font-family: "Jost-Medium", sans-serif;
-  font-weight: inherit;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-.btn--white {
-  background-color: #ffffff;
-  color: #000000;
-  transition: all .5s;
-}
-
-.btn--white:hover {
-  color: #ffffff;
-  background-color: #ffad9b;
-}
-
-.menu--btn {
-  background: transparent;
-  display: none;
-}
-
-.hero-container {
-  height: 600px;
-  background-color: #e78168;
-  margin-top: 3rem;
-  border-radius: 15px;
-  padding: 8rem 9rem;
-  overflow: hidden;
-}
-
-.hero-container .hero {
-  display: flex;
-}
-
-.hero-container .hero__col--1 {
-  flex-basis: 50%;
-}
-
-.hero-container .hero__col--1 .h-1 {
-  margin-bottom: 3rem;
-}
-
-.hero-container .hero__col--1 p {
-  color: #ffffff;
-  margin-bottom: 4rem;
-}
-
-.hero-container .hero__col--2 {
-  position: relative;
-  flex-basis: 50%;
-}
-
-.hero-container .hero__col--2::before {
-  content: '';
-  position: absolute;
-  top: -5rem;
-  left: 7rem;
-  width: 40rem;
-  height: 40rem;
-  background-color: #C96552;
-  border-radius: 50%;
-}
-
-.hero-container .hero__col--2::after {
-  content: '';
-  position: absolute;
-  top: -15rem;
-  left: 0;
-  height: 80rem;
-  width: 60rem;
-  background-image: url("../../../assets/image-hero-phone.png");
 }
