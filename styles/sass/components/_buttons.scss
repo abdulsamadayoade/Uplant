@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.52rem;
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+
+.btn-cream {
+    background-color: $color-4;
+    color: $color-1;
+    border: 2px solid $color-4;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: transparent;
+        color: $color-4;
+    }
+}
+
+.btn-green {
+    background: transparent;
+    border: 2px solid $color-4;
+    color: $color-4;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: $color-4;
+        color: $color-1;
+    }
+}

@@ -46,7 +46,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 130rem;
+  max-width: 125rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -108,4 +108,110 @@ header .nav__icon {
   width: 1.8rem;
   margin: 0 1.3rem;
   cursor: pointer;
+}
+
+header .hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  height: 55rem;
+}
+
+header .hero-text {
+  padding: 8rem 0;
+  width: 60rem;
+}
+
+header .hero__heading {
+  color: #FDFACD;
+  font-size: 6rem;
+  font-family: "DMSerifDisplay Regular", serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  max-width: 38rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+header .hero__heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  height: 6rem;
+  width: 6rem;
+  background-image: url("../../../assets/green-leaf.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+header .hero__subheading {
+  color: #F9FFFE;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+header .hero .btn-cream {
+  margin-right: 2rem;
+}
+
+header .hero-img {
+  background-image: url("/assets/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50rem;
+  position: relative;
+}
+
+header .hero-img::before {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  height: 6rem;
+  width: 6rem;
+  background-image: url("../../../assets/yellow-leaf.png");
+  background-size: cover;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 2rem 5rem;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.52rem;
+  letter-spacing: .3px;
+  cursor: pointer;
+}
+
+.btn-cream {
+  background-color: #FBC76D;
+  color: #0C3F36;
+  border: 2px solid #FBC76D;
+  transition: all .3s ease-in-out;
+}
+
+.btn-cream:hover {
+  background: transparent;
+  color: #FBC76D;
+}
+
+.btn-green {
+  background: transparent;
+  border: 2px solid #FBC76D;
+  color: #FBC76D;
+  transition: all .3s ease-in-out;
+}
+
+.btn-green:hover {
+  background: #FBC76D;
+  color: #0C3F36;
 }

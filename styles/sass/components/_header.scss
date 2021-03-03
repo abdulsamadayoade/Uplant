@@ -55,4 +55,73 @@ header {
             cursor: pointer;
         }
     }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+        height: 55rem;
+
+        &-text {
+            padding: 8rem 0;
+            width: 60rem;
+        }
+
+        &__heading {
+            color: $color-5;
+            font-size: 6rem;
+            font-family: $ff-heading;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            line-height: 1.2;
+            max-width: 38rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 10;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 4rem;
+                height: 6rem;
+                width: 6rem;
+                background-image: url('../../../assets/green-leaf.png');
+                background-size: cover;
+                z-index: -1;
+            }
+        }
+
+        &__subheading {
+            color: $color-6;
+            max-width: 50rem;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            line-height: 1.6;
+        }
+
+        .btn-cream {
+            margin-right: 2rem;
+        }
+
+        &-img {
+            background-image: url('/assets/hero-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 50rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -2rem;
+                left: -3rem;
+                height: 6rem;
+                width: 6rem;
+                background-image: url('../../../assets/yellow-leaf.png');
+                background-size: cover;
+            }
+        }
+    }
 }
