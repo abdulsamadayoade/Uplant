@@ -19,3 +19,12 @@
 $ff-heading: 'DMSerifDisplay Regular', serif;
 $ff-regular: 'Comfortaa Regular', sans-serif;
 $ff-bold: 'Comfortaa Bold', sans-serif;
+
+
+.h-2 {
+    color: $color-1;
+    font-family: 'DMSerifDisplay Regular', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.7rem;
+    letter-spacing: .3px;
+}

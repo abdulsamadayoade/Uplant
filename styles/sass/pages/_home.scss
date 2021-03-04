@@ -1,0 +1,31 @@
+section {
+    padding: 12rem 0;
+}
+
+.about {
+    border: 1px solid red;
+
+    &__flex {
+        display: flex;
+
+        div {
+            flex-basis: 50%;
+        }
+    }
+
+    &__text {
+        color: $color-7;
+        margin-bottom: 3rem;
+
+        p {
+            margin-bottom: 2rem;
+            max-width: 49rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            margin-top: 1.2rem;
+            padding: 1.7rem 6rem;
+        }
+    }
+}

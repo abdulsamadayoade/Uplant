@@ -14,6 +14,14 @@
   src: url("../../../textfonts/Comfortaa-Bold.ttf") format("truetype");
 }
 
+.h-2 {
+  color: #0C3F36;
+  font-family: 'DMSerifDisplay Regular', serif;
+  font-size: 3.5rem;
+  margin-bottom: 1.7rem;
+  letter-spacing: .3px;
+}
+
 /*-------------------------- PRESETS ---------------------------*/
 *,
 *::before,
@@ -214,4 +222,36 @@ header .hero-img::before {
 .btn-green:hover {
   background: #FBC76D;
   color: #0C3F36;
+}
+
+section {
+  padding: 12rem 0;
+}
+
+.about {
+  border: 1px solid red;
+}
+
+.about__flex {
+  display: flex;
+}
+
+.about__flex div {
+  flex-basis: 50%;
+}
+
+.about__text {
+  color: #6E757E;
+  margin-bottom: 3rem;
+}
+
+.about__text p {
+  margin-bottom: 2rem;
+  max-width: 49rem;
+  line-height: 1.8;
+}
+
+.about__text .btn {
+  margin-top: 1.2rem;
+  padding: 1.7rem 6rem;
 }
