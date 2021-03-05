@@ -19,46 +19,40 @@ section {
         column-gap: 2rem;
         padding-right: 15rem;
 
-        .a {
-            height: 27rem;
-            width: 21rem;
-            background-image: url('../../../assets/img-1.png');
+        .plant {
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: 20px;
+        }
+
+        .plant-1 {
+            height: 27rem;
+            width: 21rem;
+            background-image: url('../../../assets/img-1.png');
             position: relative;
             top: 2.5rem;
         }
 
-        .b {
+        .plant-2 {
+            height: 17rem;
+            width: 16rem;
+            background-image: url('../../../assets/img-2.png');
+            position: relative;
+            top: 5rem;
+        }
+
+        .plant-3 {
             height: 23rem;
             width: 16rem;
             background-image: url('../../../assets/img-3.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 20px;
             position: relative;
             top: -1.5rem;
         }
 
-        .c {
-            height: 17rem;
-            width: 16rem;
-            background-image: url('../../../assets/img-2.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 20px;
-            position: relative;
-            top: 4rem;
-        }
-
-        .d {
+        .plant-4 {
             height: 33rem;
             width: 21rem;
             background-image: url('../../../assets/img-4.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 20px;
         }
     }
 
