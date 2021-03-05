@@ -191,7 +191,7 @@ header .hero-img::before {
   display: inline-block;
   border: none;
   outline: none;
-  padding: 2rem 5rem;
+  padding: 1.7rem 4rem;
   border-radius: 5px;
   font-family: inherit;
   font-weight: 600;
@@ -229,7 +229,7 @@ section {
 }
 
 .about {
-  border: 1px solid red;
+  padding: 10rem 0;
 }
 
 .about__flex {
@@ -240,18 +240,73 @@ section {
   flex-basis: 50%;
 }
 
+.about__img {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  padding-right: 15rem;
+}
+
+.about__img .a {
+  height: 27rem;
+  width: 21rem;
+  background-image: url("../../../assets/img-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  top: 2.5rem;
+}
+
+.about__img .b {
+  height: 23rem;
+  width: 16rem;
+  background-image: url("../../../assets/img-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  top: -1.5rem;
+}
+
+.about__img .c {
+  height: 17rem;
+  width: 16rem;
+  background-image: url("../../../assets/img-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  top: 4rem;
+}
+
+.about__img .d {
+  height: 33rem;
+  width: 21rem;
+  background-image: url("../../../assets/img-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
 .about__text {
   color: #6E757E;
   margin-bottom: 3rem;
+  padding: 5rem 0;
 }
 
 .about__text p {
   margin-bottom: 2rem;
-  max-width: 49rem;
+  max-width: 40rem;
   line-height: 1.8;
 }
 
 .about__text .btn {
   margin-top: 1.2rem;
-  padding: 1.7rem 6rem;
+  padding: 1.7rem 5rem;
+}
+
+.about__text .btn:hover {
+  color: #0C3F36;
 }
