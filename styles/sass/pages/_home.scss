@@ -85,7 +85,7 @@ section {
 
     .h-2 {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 
     .plants-gallery {
@@ -186,6 +186,53 @@ section {
                     transform: translateX(.3rem);
                 }
             }
+        }
+    }
+}
+
+// SERVE SECTION
+.serve {
+    .h-2 {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.8rem;
+
+        div {
+            background-color: #fff;
+            border-radius: 10px;
+            height: 38rem;
+            padding: 6rem 2rem;
+        }
+
+
+        img {
+            height: 8rem;
+            width: 8rem;
+        }
+
+        h3 {
+            font-family: $ff-heading;
+            color: $color-1;
+            letter-spacing: .8px;
+            margin: 1.4rem 0 1.8rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+
+        .green {
+            background-color: $color-1;
+
+            h3 {color: $color-5;}
+            
+            p {color: $color-3;}
         }
     }
 }

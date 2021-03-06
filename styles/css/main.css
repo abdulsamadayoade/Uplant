@@ -304,7 +304,7 @@ section {
 
 .indoor .h-2 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .indoor .plants-gallery {
@@ -404,4 +404,51 @@ section {
 
 .indoor .view-more a:hover svg {
   transform: translateX(0.3rem);
+}
+
+.serve .h-2 {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.serve__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+}
+
+.serve__grid div {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 38rem;
+  padding: 6rem 2rem;
+}
+
+.serve__grid img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.serve__grid h3 {
+  font-family: "DMSerifDisplay Regular", serif;
+  color: #0C3F36;
+  letter-spacing: .8px;
+  margin: 1.4rem 0 1.8rem;
+}
+
+.serve__grid p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.serve__grid .green {
+  background-color: #0C3F36;
+}
+
+.serve__grid .green h3 {
+  color: #FDFACD;
+}
+
+.serve__grid .green p {
+  color: #F4F4F4;
 }
