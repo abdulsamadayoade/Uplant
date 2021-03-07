@@ -453,3 +453,54 @@ section {
 .serve__grid .green p {
   color: #F4F4F4;
 }
+
+.expediency .h-2 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.expediency__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100rem;
+  margin: 0 auto;
+  column-gap: 10rem;
+}
+
+.expediency__col {
+  color: #0C3F36;
+  text-align: center;
+}
+
+.expediency__col img {
+  width: 100%;
+}
+
+.expediency__col div {
+  height: 6.5rem;
+  width: 6.5rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.expediency__col h3 {
+  font-family: "DMSerifDisplay Regular", serif;
+  margin-bottom: .8rem;
+  letter-spacing: .3px;
+}
+
+.expediency__col--1 div {
+  background-color: #FFE3DE;
+}
+
+.expediency__col--2 div {
+  background-color: #E7E3FF;
+}
+
+.expediency__col--3 div {
+  background-color: #DEF8FD;
+}

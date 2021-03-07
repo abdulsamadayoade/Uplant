@@ -236,3 +236,58 @@ section {
         }
     }
 }
+
+// EXPEDIENCY SECTION
+.expediency {
+    .h-2 {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100rem;
+        margin: 0 auto;
+        column-gap: 10rem;
+        // border: 1px solid red;
+    }
+
+    &__col {
+        color: $color-1;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+        div {
+            height: 6.5rem;
+            width: 6.5rem;
+            padding: 1.5rem;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
+        }
+
+        h3 {
+            font-family: $ff-heading;
+            margin-bottom: .8rem;
+            letter-spacing: .3px;
+        }
+    }
+
+    &__col--1 {
+        div {background-color: #FFE3DE;}
+    }
+
+    &__col--2 {
+        div {background-color: #E7E3FF;}
+    }
+
+    &__col--3 {
+        div {background-color: #DEF8FD;}
+    }
+}
