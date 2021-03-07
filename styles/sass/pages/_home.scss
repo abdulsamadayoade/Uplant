@@ -207,6 +207,7 @@ section {
             border-radius: 10px;
             height: 38rem;
             padding: 6rem 2rem;
+            box-shadow: 0px 0px 3px 10px rgba(255, 255, 255, 0.7);
         }
 
 
@@ -229,6 +230,7 @@ section {
 
         .green {
             background-color: $color-1;
+            box-shadow: 0px 3px 3px 1px rgba(7, 20, 15, 0.7);
 
             h3 {color: $color-5;}
             
@@ -250,7 +252,6 @@ section {
         max-width: 100rem;
         margin: 0 auto;
         column-gap: 10rem;
-        // border: 1px solid red;
     }
 
     &__col {
