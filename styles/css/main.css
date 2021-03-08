@@ -17,9 +17,9 @@
 .h-2 {
   color: #0C3F36;
   font-family: 'DMSerifDisplay Regular', serif;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   margin-bottom: 1.7rem;
-  letter-spacing: .3px;
+  letter-spacing: .5px;
 }
 
 /*-------------------------- PRESETS ---------------------------*/
@@ -53,11 +53,16 @@ ul {
   list-style: none;
 }
 
-.container {
+.container,
+.container-sm {
   width: 100%;
   max-width: 125rem;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.container-sm {
+  max-width: 80rem;
 }
 
 header {
@@ -505,4 +510,73 @@ section {
 
 .expediency__col--3 div {
   background-color: #DEF8FD;
+}
+
+.testimonial {
+  background-color: #FFF;
+}
+
+.testimonial h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.testimonial__box {
+  position: relative;
+}
+
+.testimonial__box::before {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  left: -11rem;
+  height: 4rem;
+  width: 4rem;
+  background-image: url("../../../assets/green-square.svg");
+  background-size: cover;
+}
+
+.testimonial__box::after {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  right: -11rem;
+  height: 4rem;
+  width: 4rem;
+  background-image: url("../../../assets/yellow-square.svg");
+  background-size: cover;
+}
+
+.testimonial__text {
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: 400;
+  line-height: 2.8rem;
+  position: relative;
+}
+
+.testimonial__text img {
+  width: 100%;
+}
+
+.testimonial__text .left-quote {
+  display: block;
+  position: absolute;
+  top: -1.7rem;
+  left: -3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.testimonial__text .right-quote {
+  display: block;
+  position: absolute;
+  bottom: -2rem;
+  right: -3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.testimonial .clients {
+  margin-top: 6rem;
 }

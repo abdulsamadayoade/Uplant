@@ -292,3 +292,70 @@ section {
         div {background-color: #DEF8FD;}
     }
 }
+
+// TESTIMONIALS SECTION
+.testimonial {
+    background-color: #FFF;
+    h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__box {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3rem;
+            left: -11rem;
+            height: 4rem;
+            width: 4rem;
+            background-image: url('../../../assets/green-square.svg');
+            background-size: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -3rem;
+            right: -11rem;
+            height: 4rem;
+            width: 4rem;
+            background-image: url('../../../assets/yellow-square.svg');
+            background-size: cover;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: #4f4f4f;
+        font-weight: 400;
+        line-height: 2.8rem;
+        position: relative;
+
+        img {width: 100%;}
+
+        .left-quote {
+            display: block;
+            position: absolute;
+            top: -1.7rem;
+            left: -3rem;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        .right-quote {
+            display: block;
+            position: absolute;
+            bottom: -2rem;
+            right: -3rem;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+
+    .clients {
+        margin-top: 6rem;
+    }
+}

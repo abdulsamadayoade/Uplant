@@ -1,6 +1,11 @@
-.container {
+.container,
+.container-sm {
     width: 100%;
     max-width: 125rem;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.container-sm {
+    max-width: 80rem;
 }
