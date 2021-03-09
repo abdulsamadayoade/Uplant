@@ -420,3 +420,54 @@ section {
         }
     }
 }
+
+// BRANDS SECTION
+.brands {
+    padding: 7.5rem 0;
+    background-color: $color-1;
+
+    .h-2 {
+        color: #fff;
+        font-size: 2.6rem;
+        text-align: center;
+        margin-bottom: 6.5rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 3rem 5rem;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    &__stories {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+
+        a {
+            color: #fff;
+            font-size: 1.6rem;
+            border-bottom: 1px solid $color-4;
+            display: flex;
+            align-items: center;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                border-color: transparent;
+
+                svg {
+                    transform: translateX(5px);
+                }
+            }
+        }
+
+        svg {
+            margin-left: .7rem;
+            transition: transform .3s ease-in-out;
+        }
+    }
+}
