@@ -15,7 +15,7 @@
     }
 
     &__col--1 {
-        flex-basis: 40%;
+        flex-basis: 35%;
         background-color: $color-9;
         padding: 4rem 6rem 6rem;
 
@@ -46,8 +46,8 @@
     }
 
     &__col--2 {
-        flex-basis: 60%;
-        background-color: #292b29;
+        flex-basis: 65%;
+        background-color: #222222;
         padding: 6rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
