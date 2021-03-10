@@ -203,7 +203,7 @@ section {
         gap: 1.8rem;
 
         div {
-            background-color: #fff;
+            background-color: $color-9;
             border-radius: 10px;
             height: 38rem;
             padding: 6rem 2rem;
@@ -295,7 +295,7 @@ section {
 
 // TESTIMONIALS SECTION
 .testimonial {
-    background-color: #FFF;
+    background-color: $color-9;
 
     .h-2 {
         text-align: center;
@@ -427,7 +427,7 @@ section {
     background-color: $color-1;
 
     .h-2 {
-        color: #fff;
+        color: $color-9;
         font-size: 2.6rem;
         text-align: center;
         margin-bottom: 6.5rem;
@@ -449,7 +449,7 @@ section {
         margin-top: 7rem;
 
         a {
-            color: #fff;
+            color: $color-9;
             font-size: 1.6rem;
             border-bottom: 1px solid $color-4;
             display: flex;

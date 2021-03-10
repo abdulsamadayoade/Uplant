@@ -1,0 +1,71 @@
+.footer {
+
+    &__logo {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+        max-width: 38rem;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__col--1 {
+        flex-basis: 40%;
+        background-color: $color-9;
+        padding: 4rem 6rem 6rem;
+
+        p {
+            font-size: 1.3rem;
+            color: $color-1;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .social__link {
+            display: block;
+            height: 3rem;
+            width: 3rem;
+            background-color: $color-1;
+            margin-right: 1.3rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        ul {
+            display: flex;
+            margin-top: .5rem;
+        }
+    }
+
+    &__col--2 {
+        flex-basis: 60%;
+        background-color: #292b29;
+        padding: 6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: $color-9;
+        font-size: 1.2rem;
+
+        h6 {
+            font-size: inherit;
+            margin-bottom: 1.9rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: inherit;
+            font-size: inherit;
+        }
+    }
+}
