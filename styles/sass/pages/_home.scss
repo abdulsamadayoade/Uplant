@@ -305,6 +305,38 @@ section {
     &__box {
         position: relative;
 
+        .prev, .next {
+            content: '';
+            position: absolute;
+            top: 60%;
+            transform: translateY(-60%);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            z-index: 10;
+
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .prev {
+            left: 0;
+            background-color: $color-1;
+        }
+
+        .next {
+            right: 0;
+            background-color: $color-4;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -362,37 +394,6 @@ section {
         justify-content: center;
         text-align: center;
         position: relative;
-
-        .prev, .next {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 3rem;
-            width: 3rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            outline: none;
-            cursor: pointer;
-
-            img {
-                width: 1.5rem;
-                height: 1.5rem;
-            }
-        }
-
-        .prev {
-            left: 0;
-            background-color: $color-1;
-        }
-
-        .next {
-            right: 0;
-            background-color: $color-4;
-        }
 
         &--photo {
             width: 5.6rem;
