@@ -3,8 +3,6 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const slides = document.querySelectorAll('.testimonial__box--col');
 
-
-
 let index = 0;
 display(index);
 function display(index) {
