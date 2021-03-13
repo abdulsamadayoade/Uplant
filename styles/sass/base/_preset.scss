@@ -12,7 +12,23 @@ html {
     font-size: 62.5%; // 10px
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;  
+    
+    @media only screen and (max-width: 62.5em) { // tab-landscape
+        font-size: 56.25%;
+    }
+    
+    @media only screen and (max-width: 56.25em) { // tab-portrait
+        font-size: 54%; 
+    }
+
+    @media only screen and (max-width: 37.5em) { // phone
+        font-size: 51%; 
+    }
+    
+    @media only screen and (min-width: 112.5em) { // big desktop
+        font-size: 75%; // 1rem = 12px, 12/16 = 75
+    }
 }
 
 body {

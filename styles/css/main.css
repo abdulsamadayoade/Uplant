@@ -38,6 +38,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   background-color: #F9FFFE;
   font-family: "Comfortaa Regular", sans-serif;
@@ -759,4 +783,8 @@ section {
 .brands__stories svg {
   margin-left: .7rem;
   transition: transform .3s ease-in-out;
+}
+
+header .nav__item {
+  margin: 0 2rem;
 }
