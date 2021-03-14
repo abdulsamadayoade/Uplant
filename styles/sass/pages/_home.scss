@@ -337,26 +337,24 @@ section {
             background-color: $color-4;
         }
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: -3rem;
-            left: -11rem;
-            height: 4rem;
-            width: 4rem;
-            background-image: url('../../../assets/green-square.svg');
-            background-size: cover;
-        }
-
+        &::before,
         &::after {
             content: '';
             position: absolute;
-            top: -3rem;
-            right: -11rem;
+            top: -12%;
             height: 4rem;
             width: 4rem;
-            background-image: url('../../../assets/yellow-square.svg');
             background-size: cover;
+        }
+
+        &::before {
+            left: -15%;
+            background-image: url('../../../assets/green-square.svg');
+        }
+
+        &::after {
+            right: -15%;
+            background-image: url('../../../assets/yellow-square.svg');
         }
     }
 

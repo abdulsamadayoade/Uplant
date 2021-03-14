@@ -152,7 +152,7 @@ header .hero {
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
-  height: 55rem;
+  height: calc(100vh - 7rem);
 }
 
 header .hero-text {
@@ -650,26 +650,23 @@ section {
   background-color: #FBC76D;
 }
 
-.testimonial__box::before {
+.testimonial__box::before, .testimonial__box::after {
   content: '';
   position: absolute;
-  top: -3rem;
-  left: -11rem;
+  top: -12%;
   height: 4rem;
   width: 4rem;
-  background-image: url("../../../assets/green-square.svg");
   background-size: cover;
 }
 
+.testimonial__box::before {
+  left: -15%;
+  background-image: url("../../../assets/green-square.svg");
+}
+
 .testimonial__box::after {
-  content: '';
-  position: absolute;
-  top: -3rem;
-  right: -11rem;
-  height: 4rem;
-  width: 4rem;
+  right: -15%;
   background-image: url("../../../assets/yellow-square.svg");
-  background-size: cover;
 }
 
 .testimonial__text {
@@ -785,6 +782,36 @@ section {
   transition: transform .3s ease-in-out;
 }
 
-header .nav__item {
-  margin: 0 2rem;
+@media screen and (max-width: 1000px) {
+  .testimonial__box::before {
+    top: -12%;
+    left: -12%;
+  }
+  .testimonial__box::after {
+    top: -12%;
+    right: -10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header .nav__item {
+    margin: 0 1.7rem;
+  }
+  header .nav__icon {
+    margin: 0 1rem;
+  }
+  .about__img {
+    padding-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .testimonial__box::before {
+    top: -25%;
+    left: -10%;
+  }
+  .testimonial__box::after {
+    top: -25%;
+    right: -7%;
+  }
 }

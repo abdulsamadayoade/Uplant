@@ -1,6 +1,45 @@
-// HEADER
-header {
-    .nav__item {
-        margin: 0 2rem;
+@media screen and (max-width: 1000px) {
+    .testimonial__box {
+        &::before {
+            top: -12%;
+            left: -12%;
+        }
+
+        &::after {
+            top: -12%;
+            right: -10%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        .nav__item {
+            margin: 0 1.7rem;
+        }
+
+        .nav__icon {
+            margin: 0 1rem;
+        }
+    }
+
+    .about {
+        &__img {
+            padding-right: 8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .testimonial__box {
+        &::before {
+            top: -25%;
+            left: -10%;
+        }
+
+        &::after {
+            top: -25%;
+            right: -7%;
+        }
     }
 }
