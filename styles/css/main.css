@@ -902,7 +902,7 @@ section {
   .expediency__grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 10rem;
+    row-gap: 9rem;
   }
 }
 
