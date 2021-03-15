@@ -54,6 +54,18 @@ header {
             margin: 0 1.3rem;
             cursor: pointer;
         }
+
+        .menu {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: none;
+
+            svg {
+                fill: $color-5;
+            }
+        }
     }
 
     .hero {

@@ -148,6 +148,18 @@ header .nav__icon {
   cursor: pointer;
 }
 
+header .nav .menu {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+header .nav .menu svg {
+  fill: #FDFACD;
+}
+
 header .hero {
   display: flex;
   justify-content: space-between;
@@ -813,5 +825,56 @@ section {
   .testimonial__box::after {
     top: -25%;
     right: -7%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: auto;
+  }
+  header .nav__box {
+    background: transparent;
+  }
+  header .nav__icons {
+    display: none;
+  }
+  header .nav__list {
+    background-color: #FDFACD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-40vh);
+    transition: transform .5s;
+    z-index: 50;
+  }
+  header .nav__list.active {
+    transform: translateY(0);
+  }
+  header .nav__item {
+    margin: 1.5rem 0;
+  }
+  header .nav .menu {
+    display: block;
+    position: relative;
+    z-index: 70;
+  }
+  header .nav .change-color svg {
+    fill: #0C3F36;
+  }
+  header .hero {
+    height: auto;
+    justify-content: space-around;
+  }
+  header .hero-img {
+    display: none;
+  }
+  header .hero__heading {
+    max-width: 50rem;
   }
 }
