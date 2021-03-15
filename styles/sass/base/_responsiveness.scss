@@ -106,3 +106,13 @@
         }    
     }
 }
+
+@media screen and (max-width: 500px) {
+    header {
+        .hero {
+            &__heading {
+                font-size: 5.5rem;
+            }
+        }
+    }
+}

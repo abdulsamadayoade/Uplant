@@ -878,3 +878,9 @@ section {
     max-width: 50rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  header .hero__heading {
+    font-size: 5.5rem;
+  }
+}
