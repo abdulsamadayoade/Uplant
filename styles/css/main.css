@@ -899,6 +899,11 @@ section {
     row-gap: 6rem;
     justify-content: center;
   }
+  .expediency__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
