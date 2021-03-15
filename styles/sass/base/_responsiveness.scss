@@ -105,6 +105,31 @@
             }
         }    
     }
+
+    .about {
+        &__flex {
+            flex-direction: column;
+
+            div {
+                margin: 0 auto;
+            }
+        }
+
+        p {
+            width: 100%;
+            max-width: 60rem;
+        }
+    }
+
+    .indoor {
+        .plants-gallery {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .plant-img--2 {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {

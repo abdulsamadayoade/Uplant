@@ -400,7 +400,7 @@ section {
 
 .about__text p {
   margin-bottom: 2rem;
-  max-width: 40rem;
+  width: 40rem;
   line-height: 1.8;
 }
 
@@ -876,6 +876,22 @@ section {
   }
   header .hero__heading {
     max-width: 50rem;
+  }
+  .about__flex {
+    flex-direction: column;
+  }
+  .about__flex div {
+    margin: 0 auto;
+  }
+  .about p {
+    width: 100%;
+    max-width: 60rem;
+  }
+  .indoor .plants-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .indoor .plant-img--2 {
+    display: none;
   }
 }
 
