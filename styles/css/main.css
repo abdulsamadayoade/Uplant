@@ -287,7 +287,7 @@ header .hero-img::before {
 }
 
 .footer__col--1 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #0C3F36;
   line-height: 1.5;
   font-weight: 600;
@@ -318,7 +318,7 @@ header .hero-img::before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: #FFFFFF;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .footer__col--2 h6 {
