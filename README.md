@@ -8,4 +8,4 @@ The design was made by Fele Omolola while I code it up (frontend) with HTML, CSS
 
 
 
-Live URL =
+Live URL = http://abdulsamad.xyz/Uplant/
