@@ -143,13 +143,50 @@
         grid-template-rows: repeat(3, 1fr);
         row-gap: 9rem;
     }
+
+    .testimonial__box {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .testimonial__text {
+        .left-quote,
+        .right-quote {
+            height: 2rem;
+            width: 2rem;
+        }
+
+        .left-quote {
+            top: -30%;
+            left: -1.5%;
+        }
+
+        .right-quote {
+            bottom: -35%;
+            right: 2%;
+        }
+    }
+
+    .brands {
+        img {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        &__inner {
+            flex-direction: column;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
     header {
         .hero {
             &__heading {
-                font-size: 5.5rem;
+                font-size: 5.1rem;
             }
         }
     }

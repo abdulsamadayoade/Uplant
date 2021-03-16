@@ -693,22 +693,22 @@ section {
   width: 100%;
 }
 
-.testimonial__text .left-quote {
+.testimonial__text .left-quote,
+.testimonial__text .right-quote {
   display: block;
   position: absolute;
-  top: -1.7rem;
-  left: -3rem;
   height: 2.5rem;
   width: 2.5rem;
 }
 
+.testimonial__text .left-quote {
+  top: -12%;
+  left: -5%;
+}
+
 .testimonial__text .right-quote {
-  display: block;
-  position: absolute;
-  bottom: -2rem;
-  right: -3rem;
-  height: 2.5rem;
-  width: 2.5rem;
+  bottom: -13%;
+  right: -5%;
 }
 
 .testimonial__client {
@@ -774,7 +774,7 @@ section {
 
 .brands__stories a {
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   border-bottom: 1px solid #FBC76D;
   display: flex;
   align-items: center;
@@ -904,10 +904,32 @@ section {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 9rem;
   }
+  .testimonial__box::before, .testimonial__box::after {
+    display: none;
+  }
+  .testimonial__text .left-quote,
+  .testimonial__text .right-quote {
+    height: 2rem;
+    width: 2rem;
+  }
+  .testimonial__text .left-quote {
+    top: -30%;
+    left: -1.5%;
+  }
+  .testimonial__text .right-quote {
+    bottom: -35%;
+    right: 2%;
+  }
+  .brands img {
+    width: 100%;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 500px) {
   header .hero__heading {
-    font-size: 5.5rem;
+    font-size: 5.1rem;
   }
 }

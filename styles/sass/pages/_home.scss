@@ -367,22 +367,22 @@ section {
 
         img {width: 100%;}
 
-        .left-quote {
+        .left-quote,
+        .right-quote {
             display: block;
             position: absolute;
-            top: -1.7rem;
-            left: -3rem;
             height: 2.5rem;
             width: 2.5rem;
         }
 
+        .left-quote {
+            top: -12%;
+            left: -5%;
+        }
+
         .right-quote {
-            display: block;
-            position: absolute;
-            bottom: -2rem;
-            right: -3rem;
-            height: 2.5rem;
-            width: 2.5rem;
+            bottom: -13%;
+            right: -5%;
         }
     }
 
@@ -449,7 +449,7 @@ section {
 
         a {
             color: $color-9;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             border-bottom: 1px solid $color-4;
             display: flex;
             align-items: center;
