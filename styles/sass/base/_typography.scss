@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'DMSerifDisplay Regular';
-    src:url('../../../textfonts/DMSerifDisplay-Regular.ttf') format('truetype');
+    src:url('../../textfonts/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Comfortaa Regular';
-    src:url('../../../textfonts/Comfortaa-Regular.ttf') format('truetype');
+    src:url('../../textfonts/Comfortaa-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Comfortaa Bold';
-    src:url('../../../textfonts/Comfortaa-Bold.ttf') format('truetype');
+    src:url('../../textfonts/Comfortaa-Bold.ttf') format('truetype');
 }
 
 
@@ -27,4 +27,5 @@ $ff-bold: 'Comfortaa Bold', sans-serif;
     font-size: 3.7rem;
     margin-bottom: 1.7rem;
     letter-spacing: .5px;
+    font-weight: 400;
 }

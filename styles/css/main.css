@@ -20,6 +20,7 @@
   font-size: 3.7rem;
   margin-bottom: 1.7rem;
   letter-spacing: .5px;
+  font-weight: 400;
 }
 
 /*-------------------------- PRESETS ---------------------------*/
@@ -179,18 +180,26 @@ header .hero__heading {
   letter-spacing: 1px;
   text-transform: capitalize;
   line-height: 1.2;
-  max-width: 38rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 10;
 }
 
-header .hero__heading::before {
+header .hero__heading span {
+  display: block;
+}
+
+header .hero__heading .green {
+  display: inline-block;
+  position: relative;
+}
+
+header .hero__heading .green::before {
   content: '';
   position: absolute;
   top: 0;
-  right: 4rem;
-  height: 6rem;
+  right: 1rem;
+  height: 5rem;
   width: 6rem;
   background-image: url("../../assets/green-leaf.png");
   background-size: cover;
@@ -236,7 +245,7 @@ header .hero-img::before {
   padding: 1.7rem 4rem;
   border-radius: 5px;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.52rem;
   letter-spacing: .3px;
   cursor: pointer;
@@ -289,8 +298,8 @@ header .hero-img::before {
 .footer__col--1 p {
   font-size: 1.3rem;
   color: #0C3F36;
-  line-height: 1.5;
-  font-weight: 600;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .footer__col--1 .social__link {
@@ -441,7 +450,7 @@ section {
   height: 3rem;
   width: 15rem;
   background-color: rgba(244, 244, 244, 0.7);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: .5px;
   color: #0C3F36;
@@ -497,7 +506,7 @@ section {
 
 .indoor .view-more a {
   color: #0C3F36;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.5rem;
   border-bottom: 2px solid #FBC76D;
   display: inline-flex;
@@ -543,6 +552,7 @@ section {
 
 .serve__grid h3 {
   font-family: "DMSerifDisplay Regular", serif;
+  font-weight: 400;
   color: #0C3F36;
   letter-spacing: .8px;
   margin: 1.4rem 0 1.8rem;
@@ -603,6 +613,7 @@ section {
   font-family: "DMSerifDisplay Regular", serif;
   margin-bottom: .8rem;
   letter-spacing: .3px;
+  font-weight: 400;
 }
 
 .expediency__col--1 div {
@@ -971,5 +982,23 @@ section {
     flex-basis: 100%;
     row-gap: 5rem;
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header .hero .btn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  header .hero .btn-cream {
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+  header .hero-text {
+    padding: 4rem 0;
+  }
+  header .hero__subheading {
+    margin-top: 3rem;
   }
 }

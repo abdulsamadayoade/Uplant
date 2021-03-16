@@ -86,19 +86,27 @@ header {
             letter-spacing: 1px;
             text-transform: capitalize;
             line-height: 1.2;
-            max-width: 38rem;
             margin-bottom: 2rem;
             position: relative;
             z-index: 10;
 
-            &::before {
+            span {
+                display: block;
+            }
+
+            .green {
+                display: inline-block;
+                position: relative;
+            }
+
+            .green::before {
                 content: '';
                 position: absolute;
                 top: 0;
-                right: 4rem;
-                height: 6rem;
+                right: 1rem;
+                height: 5rem;
                 width: 6rem;
-                background-image: url('../../../assets/green-leaf.png');
+                background-image: url('../../assets/green-leaf.png');
                 background-size: cover;
                 z-index: -1;
             }
@@ -117,7 +125,7 @@ header {
         }
 
         &-img {
-            background-image: url('/assets/hero-bg.png');
+            background-image: url('../../assets/hero-bg.png');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
@@ -131,7 +139,7 @@ header {
                 left: -3rem;
                 height: 6rem;
                 width: 6rem;
-                background-image: url('../../../assets/yellow-leaf.png');
+                background-image: url('../../assets/yellow-leaf.png');
                 background-size: cover;
             }
         }

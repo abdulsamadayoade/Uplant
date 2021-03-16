@@ -30,7 +30,7 @@ section {
         .plant-1 {
             height: 27rem;
             width: 21rem;
-            background-image: url('../../../assets/img-1.png');
+            background-image: url('../../assets/img-1.png');
             position: relative;
             top: 2.5rem;
         }
@@ -38,7 +38,7 @@ section {
         .plant-2 {
             height: 17rem;
             width: 16rem;
-            background-image: url('../../../assets/img-2.png');
+            background-image: url('../../assets/img-2.png');
             position: relative;
             top: 5rem;
         }
@@ -46,7 +46,7 @@ section {
         .plant-3 {
             height: 23rem;
             width: 16rem;
-            background-image: url('../../../assets/img-3.png');
+            background-image: url('../../assets/img-3.png');
             position: relative;
             top: -1.5rem;
         }
@@ -54,7 +54,7 @@ section {
         .plant-4 {
             height: 33rem;
             width: 21rem;
-            background-image: url('../../../assets/img-4.png');
+            background-image: url('../../assets/img-4.png');
         }
     }
 
@@ -109,7 +109,7 @@ section {
                 height: 3rem;
                 width: 15rem;
                 background-color: rgba(244, 244, 244, 0.7);
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 1.4rem;
                 letter-spacing: .5px;
                 color: $color-1;
@@ -120,7 +120,7 @@ section {
         }
 
         .plant-img--1 {
-            background-image: url('../../../assets/plant-1.png');
+            background-image: url('../../assets/plant-1.png');
             grid-column: 1/3;
             grid-row: 1/2;
 
@@ -130,7 +130,7 @@ section {
         }
 
         .plant-img--2 {
-            background-image: url('../../../assets/plant-4.png');
+            background-image: url('../../assets/plant-4.png');
             grid-column: 3/4;
             grid-row: 1/3;
 
@@ -140,7 +140,7 @@ section {
         }
 
         .plant-img--3 {
-            background-image: url('../../../assets/plant-2.png');
+            background-image: url('../../assets/plant-2.png');
             grid-column: 1/2;
             grid-row: 2/3;
 
@@ -150,7 +150,7 @@ section {
         }
 
         .plant-img--4 {
-            background-image: url('../../../assets/plant-3.png');
+            background-image: url('../../assets/plant-3.png');
             grid-column: 2/3;
             grid-row: 2/3;
 
@@ -166,7 +166,7 @@ section {
 
         a {
             color: $color-1;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 1.5rem;
             border-bottom: 2px solid $color-4;
             display: inline-flex;
@@ -218,6 +218,7 @@ section {
 
         h3 {
             font-family: $ff-heading;
+            font-weight: 400;
             color: $color-1;
             letter-spacing: .8px;
             margin: 1.4rem 0 1.8rem;
@@ -277,6 +278,7 @@ section {
             font-family: $ff-heading;
             margin-bottom: .8rem;
             letter-spacing: .3px;
+            font-weight: 400;
         }
     }
 
@@ -349,12 +351,12 @@ section {
 
         &::before {
             left: -15%;
-            background-image: url('../../../assets/green-square.svg');
+            background-image: url('../../assets/green-square.svg');
         }
 
         &::after {
             right: -15%;
-            background-image: url('../../../assets/yellow-square.svg');
+            background-image: url('../../assets/yellow-square.svg');
         }
     }
 
