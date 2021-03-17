@@ -1001,4 +1001,23 @@ section {
   header .hero__subheading {
     margin-top: 3rem;
   }
+  .about__img {
+    column-gap: 1rem;
+  }
+  .about__img .plant-1 {
+    height: 22rem;
+    width: 16rem;
+  }
+  .about__img .plant-2 {
+    height: 12rem;
+    width: 11rem;
+  }
+  .about__img .plant-3 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .about__img .plant-4 {
+    height: 28rem;
+    width: 17rem;
+  }
 }
